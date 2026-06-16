@@ -44,7 +44,9 @@ export function ProductImageField({ imageUrl, onImageUrlChange }: ProductImageFi
 
     try {
       const result = await startUpload(Array.from(files));
-      const url = resolveUploadedImageUrl(result?.[0]);
+      if (!result?.length) return;
+
+      const url = resolveUploadedImageUrl(result[0]);
       if (url) {
         onImageUrlChange(url);
         toast.success("Image uploaded");
