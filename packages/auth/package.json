@@ -1,0 +1,24 @@
+{
+  "name": "@CLTH/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@CLTH/db": "workspace:*",
+    "@CLTH/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@CLTH/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

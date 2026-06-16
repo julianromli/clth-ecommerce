@@ -1,0 +1,3 @@
+{
+  "extends": "@CLTH/config/tsconfig.base.json"
+}

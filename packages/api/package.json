@@ -1,0 +1,26 @@
+{
+  "name": "@CLTH/api",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@CLTH/auth": "workspace:*",
+    "@CLTH/db": "workspace:*",
+    "@CLTH/env": "workspace:*",
+    "@trpc/client": "catalog:",
+    "@trpc/server": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@CLTH/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
