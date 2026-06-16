@@ -9,6 +9,7 @@ import { toast } from "sonner";
 import Loader from "./components/loader";
 import { routeTree } from "./routeTree.gen";
 import { TRPCProvider } from "./utils/trpc";
+import { getTrpcUrl } from "./utils/trpc-url";
 
 function createQueryClient() {
   return new QueryClient({
@@ -31,7 +32,7 @@ function createQueryClient() {
 const trpcClient = createTRPCClient<AppRouter>({
   links: [
     httpBatchLink({
-      url: "/api/trpc",
+      url: getTrpcUrl(),
       fetch(url, options) {
         return fetch(url, {
           ...options,

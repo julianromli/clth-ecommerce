@@ -21,6 +21,7 @@
     "@trpc/client": "catalog:",
     "@trpc/server": "catalog:",
     "@trpc/tanstack-react-query": "^11.16.0",
+    "@uploadthing/react": "^7.3.3",
     "better-auth": "catalog:",
     "dotenv": "catalog:",
     "lucide-react": "^1.8.0",
@@ -29,6 +30,7 @@
     "react-dom": "catalog:",
     "sonner": "^2.0.7",
     "tailwindcss": "^4.2.2",
+    "uploadthing": "^7.7.4",
     "zod": "catalog:"
   },
   "devDependencies": {

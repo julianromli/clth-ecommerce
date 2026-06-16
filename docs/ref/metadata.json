@@ -1,0 +1,6 @@
+{
+  "name": "CLTH E-commerce",
+  "description": "A modern, responsive e-commerce landing page for the lifestyle apparel brand CLTH.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

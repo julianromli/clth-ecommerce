@@ -35,7 +35,8 @@
     "db:push": "vp run --filter @CLTH/db db:push",
     "db:studio": "vp run --filter @CLTH/db db:studio",
     "db:generate": "vp run --filter @CLTH/db db:generate",
-    "db:migrate": "vp run --filter @CLTH/db db:migrate"
+    "db:migrate": "vp run --filter @CLTH/db db:migrate",
+    "db:seed": "bun run packages/db/src/seed.ts"
   },
   "dependencies": {
     "@CLTH/env": "workspace:*",

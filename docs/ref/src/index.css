@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Neue Haas Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Neue Haas Grotesk Semibold", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-dark: #2A362D; /* very dark green from footer */
+  --color-brand-light: #E7EDDF; /* light green banner bg */
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #1A1A1A;
+  background-color: #F8F8F8;
+}

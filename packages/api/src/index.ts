@@ -23,3 +23,19 @@ export const protectedProcedure = t.procedure.use(({ ctx, next }) => {
     },
   });
 });
+
+export const adminProcedure = t.procedure.use(({ ctx, next }) => {
+  if (!ctx.adminSession) {
+    throw new TRPCError({
+      code: "UNAUTHORIZED",
+      message: "Admin authentication required",
+      cause: "No admin session",
+    });
+  }
+  return next({
+    ctx: {
+      ...ctx,
+      adminSession: ctx.adminSession,
+    },
+  });
+});
